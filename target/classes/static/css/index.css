@@ -34,40 +34,45 @@ h1 {
     font-size: 20px;
 
 }
-
 .drop {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    display: inline-block;
 }
 
 .drop button {
     cursor: pointer;
     color: rgb(142, 150, 174);
     font-size: 20px;
-}
-
-.drop a {
-    display: flex;
-    flex-direction: column;
-}
-
-.content .hov {
-    font-size: 20px;
+    background-color: transparent;
+    border: none;
 }
 
 .drop .content {
-    margin-top: 25px;
     position: absolute;
+    top: 100%;
+    left: 0;
     display: none;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .drop:hover .content {
     display: block;
 }
 
+.drop .hov {
+    font-size: 16px;
+    padding: 10px;
+    color: rgb(142, 150, 174);
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
 .drop .hov:hover {
     color: rgb(255, 255, 255);
-    border: 5px;
     background-color: rgb(55, 51, 51);
 }
 
